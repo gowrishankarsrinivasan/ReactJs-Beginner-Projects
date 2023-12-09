@@ -19,7 +19,7 @@ This project is a basic React application that allows users to enter a binary nu
 - JavaScript
 - HTML
 - CSS
-2.simple project
+#2.simple project
   # Event Countdown Timer
 
 A simple React application that allows users to set a future event's name and date-time and displays a countdown to the specified event.
