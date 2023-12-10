@@ -1,51 +1,25 @@
+// src/App.js
+
 import React, { useState } from 'react';
-import EventForm from "./Projects/EventForm/EventForm";
-import CountdownTimer from './Projects/EventForm/CountdownTimer';
+import SearchBar from './Projects/MovieApp/SearchBar';
+import MovieList from './Projects/MovieApp/MovieList';
+import { searchMovies } from './Projects/MovieApp/movieService';
 
 const App = () => {
-  const [eventData, setEventData] = useState(null);
+  const [movies, setMovies] = useState([]);
 
-  const handleStartClick = (eventName, eventDateTime) => {
-    setEventData({ eventName, eventDateTime });
+  const handleSearch = async (query) => {
+    const results = await searchMovies(query);
+    setMovies(results);
   };
 
   return (
-    <div className="App">
-      {!eventData ? (
-        <EventForm onStartClick={handleStartClick} />
-      ) : (
-        <CountdownTimer eventName={eventData.eventName} eventDateTime={eventData.eventDateTime} />
-      )}
+    <div>
+      <h1>Movie Search App</h1>
+      <SearchBar onSearch={handleSearch} />
+      <MovieList movies={movies} />
     </div>
   );
 };
 
 export default App;
-
-
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// import Home from "./JsComponents/Home";
-// import TaskForm from "./JsComponents/AddTask";
-
-// import HeroSection from "./JsComponents/HeroSection";
-// import Task from "./JsComponents/ListTask";
-// import Navbar from "./JsComponents/Navbar";
-
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <div className="App">
-//         <Navbar />
-//         <HeroSection />
-//         <TaskForm />
-//         <Task />
-//         <Routes>
-//           <Route exact path="/" element={<Home />} />
-//         </Routes>
-//       </div>
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
