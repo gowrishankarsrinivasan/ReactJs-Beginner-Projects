@@ -1,4 +1,3 @@
-1.simple project.
 # Binary To Decimal Converter
 
 A simple React application that converts binary numbers to decimal.
@@ -19,8 +18,10 @@ This project is a basic React application that allows users to enter a binary nu
 - JavaScript
 - HTML
 - CSS
-#2.simple project
-  # Event Countdown Timer
+
+---
+
+# Event Countdown Timer
 
 A simple React application that allows users to set a future event's name and date-time and displays a countdown to the specified event.
 
@@ -42,9 +43,45 @@ This project is a basic React application designed to create a countdown timer f
 - HTML
 - CSS
 
-## How to Use
+---
 
-1. Clone the repository to your local machine.
+# Movie Searching Page using OMDb API
 
-   ```bash
-   git clone https://github.com/gowrishankarsrinivasan/event-countdown-timer.git
+A React application that allows users to search for movies using the Open Movie Database (OMDb) API and displays relevant details about the searched movies.
+
+## Overview
+
+This project is a React-based movie searching page that utilizes the OMDb API to fetch information about movies. Users can enter the title of a movie, click a search button, and the application will display relevant details such as title, year, plot, and poster.
+
+## Features
+
+- Input field for entering the movie title.
+- Search button to initiate the movie search.
+
+## Technologies Used
+
+- React
+- JavaScript
+- HTML
+- CSS
+
+---
+
+# Responsive Navigation Bar
+
+A simple and responsive navigation bar for all types of devices.
+
+## Overview
+
+This project is a basic navigation bar designed to be responsive across various devices. It ensures a seamless user experience on both desktop and mobile devices.
+
+## Features
+
+- Responsive design for different screen sizes.
+- Simple navigation links for easy access.
+- Clean and user-friendly interface.
+
+## Technologies Used
+
+- HTML
+- CSS
