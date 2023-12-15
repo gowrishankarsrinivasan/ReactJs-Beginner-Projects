@@ -1,0 +1,41 @@
+/* styles.css */
+
+.container-fluid {
+
+    bottom: 0;
+    position: sticky;
+    background-color: #282c34; /* Set your desired background color */
+    color: white;
+    padding: 20px;
+  }
+  
+  .footer-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-content {
+    display: flex;
+  }
+  
+  .footer-col {
+    text-align: center;
+    margin: 0 20px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .footer-col:hover {
+    color: #61dafb; /* Change color on hover */
+  }
+  
+  #fire {
+    font-size: 2em; /* Adjust the size of the icon */
+  }
+  
+  .footer-h5 {
+    margin-top: 5px;
+  }
+  
