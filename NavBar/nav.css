@@ -1,93 +1,49 @@
-.container {
-  height: 10vh;
-  background-color: #120931;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
+/* styles.css */
 
-.nav-left p {
-  margin-left: 20px;
-  font-size: 1rem;
-  color: goldenrod;
-  border: 2px solid goldenrod;
-  padding: 4px;
-  border-radius: 4%;
-}
+.container-fluid {
 
-.nav-right h2 {
-  font-size: 1.5rem;
-  color: #3498db;
-  padding: 4px;
-  background-color: #372963;
-  margin-right: 20px;
-  border-radius: 4%;
-}
-.nav-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-.icon {
-  color: white;
-  padding: 10px;
-  width: 30px;
-  height: 23px;
-  background-color: #372963;
-}
-.nav-input {
-  width: 90%;
-  height: 23px;
-  padding: 10px;
-  border: transparent;
-  background-color: #372963;
-  outline: none;
-}
-.nav-input::placeholder {
-  color: red;
-  font-size: 1rem;
-}
-/* .nav-input:focus {
-  border-color: transparent;
-} */
-
-@media (max-width: 320px) {
-  .container {
-    height: auto;
-  }
-
-  .nav-left,
-  .nav-right {
+    bottom: 0;
+    position: fixed;
+    background-color:transparent; /* Set your desired background color */
+    color: white;
+    padding-bottom: 50px;
     display: flex;
-    flex-direction: column;
-    color: aliceblue;
+    width: 100%;
+    height: 15vh;
     justify-content: center;
-    align-items: center; /* Optional: Center items horizontally in a vertical layout */
-    width: 100%; /* Full width for better responsiveness */
-    margin: 5px 0; /* Add some spacing between items */
+    z-index: 2;
   }
-}
-@media (max-width: 430px) {
-  .container {
-    height: auto;
-  }
-
-  .nav-left,
-  .nav-right {
+  
+  .footer-row {
     display: flex;
-    flex-direction: column;
-    background-color: transparent;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #120931;
+    display: flex;
     justify-content: center;
-    align-items: center; /* Optional: Center items horizontally in a vertical layout */
-    width: 100%; /* Full width for better responsiveness */
-    margin: 5px 0; /* Add some spacing between items */
+    align-items: center;
   }
-}
-@media (max-width: 770px) {
-  .nav-left,
-  .nav-right {
-    font-size: 12px;
+  
+
+  .footer-col {
+    text-align: center;
+    margin: 0 20px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    padding: 40px;
+    margin-top: 10px;
   }
-}
+  
+  
+  #fire {
+    color: rgb(255, 255, 255);
+    font-size: 2em; /* Adjust the size of the icon */
+  }
+  
+  .footer-h5 {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
