@@ -1,25 +1,22 @@
 import React from "react";
 import { useState } from "react";
 import { IoArrowForwardCircleSharp } from "react-icons/io5";
-import right from "./img/avatar.jpg";
+import img from "./img/logo-color.png";
 import "../base-apperal-comming-soon/landing.css";
 
 const Landing = () => {
   const [email, setEmail] = useState(" ");
 
+
   return (
     <div className="container">
       <div className="left">
         <div className="inner-container">
-        <h3>
-        BASE
-        <br />
-        APPERAL
-        </h3>
+        <img src={img} className="logo" alt="errored" />
           <h1>
             <span>We're</span>
             <br />
-            comming
+            coming
             <br />
             soon
           </h1>
